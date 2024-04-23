@@ -16,7 +16,10 @@ LOGO = """
 # ---------------------------- Functions ------------------------------- #
 
 def print_logo():
-    """Prints the logo of the program"""
+    """
+    Print the logo of the program to the console.
+    :return: None
+    """
 
     print()
     print(LOGO)
@@ -24,7 +27,11 @@ def print_logo():
 
 
 def validate_user_input(prompt: str) -> int:
-    """Validates the user input"""
+    """
+    Validate the user input.
+    :param str prompt: The prompt message to display to the user.
+    :return: The validated integer input from the user.
+    """
 
     while True:
         user_input = input(prompt)
@@ -43,7 +50,13 @@ def validate_user_input(prompt: str) -> int:
 
 
 def montgomery_ladder(base: int, exponent: int, modulo: int) -> int:
-    """Performs the montgomery_ladder"""
+    """
+    Perform the Montgomery Ladder algorithm.
+    :param int base: The base number for the calculation.
+    :param int exponent: The exponent for the calculation.
+    :param int modulo: The modulo for the calculation.
+    :return: The result of the Montgomery Ladder calculation.
+    """
 
     x = 1
     y = base % modulo
@@ -61,7 +74,10 @@ def montgomery_ladder(base: int, exponent: int, modulo: int) -> int:
 
 
 def main():
-    """Main function of the program"""
+    """
+    Main function of the program.
+    :return: None
+    """
 
     print_logo()
 
